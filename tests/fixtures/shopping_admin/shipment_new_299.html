@@ -1,0 +1,1167 @@
+<!DOCTYPE html><html lang="en"><head>
+        <script>
+    var BASE_URL = 'http://localhost:7780/admin/admin/';
+    var FORM_KEY = 'FORMKEY';
+    var require = {
+        'baseUrl': 'http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US'
+    };</script>        <meta charset="utf-8">
+<meta name="title" content="New Shipment / Shipments / Operations / Sales / Magento Admin">
+<meta name="robots" content="NOINDEX,NOFOLLOW">
+<meta name="viewport" content="width=1024">
+<meta name="format-detection" content="telephone=no">
+<title>New Shipment / Shipments / Operations / Sales / Magento Admin</title>
+<link rel="stylesheet" type="text/css" media="all" href="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/extjs/resources/css/ext-all.css">
+<link rel="stylesheet" type="text/css" media="all" href="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/extjs/resources/css/ytheme-magento.css">
+<link rel="stylesheet" type="text/css" media="all" href="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/jstree/themes/default/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/css/styles-old.css">
+<link rel="stylesheet" type="text/css" media="all" href="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/css/styles.css">
+<link rel="icon" type="image/x-icon" href="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Theme/favicon.ico">
+<link rel="shortcut icon" type="image/x-icon" href="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Theme/favicon.ico">
+<script type="text/javascript" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/requirejs/require.js"></script>
+<script type="text/javascript" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/requirejs/mixins.js"></script>
+<script type="text/javascript" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/requirejs-config.js"></script>
+            <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="js/theme" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/js/theme.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/backend/bootstrap" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/backend/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/adminhtml/globals" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/adminhtml/globals.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Catalog/catalog/product" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Catalog/catalog/product.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Translation/js/mage-translation-dictionary" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Translation/js/mage-translation-dictionary.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="prototype" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/legacy-build.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/template" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/alert" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/modal/alert.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/mage" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/mage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Shipping/order/packaging" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Shipping/order/packaging.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/modal" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/modal/modal.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/main" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/apply/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/backend/notification" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/backend/notification.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bootstrap" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/translate" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/translate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/smart-keyboard-handler" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/smart-keyboard-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.tabs" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/jquery.tabs.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/requirejs/domReady.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/confirm" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/modal/confirm.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dataPost" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/dataPost.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/requirejs/text.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/underscore.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/ui" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/jquery-ui.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/key-codes" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/key-codes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/z-index" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/z-index.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/knockoutjs/knockout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-es5" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/knockoutjs/knockout-es5.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/bootstrap/tab" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/bootstrap/tab.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/bootstrap/collapse" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/bootstrap/collapse.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/apply/scripts" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/apply/scripts.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/engine" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/template/engine.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bootstrap" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/bootstrap.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/observable_array" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/extender/observable_array.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/extender/bound-nodes" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/extender/bound-nodes.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/wrapper" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/utils/wrapper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/events" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/core/events.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-repeat" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/knockoutjs/knockout-repeat.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="knockoutjs/knockout-fast-foreach" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/knockoutjs/knockout-fast-foreach.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/bootstrap/util/index" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/bootstrap/util/index.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/bootstrap/dom/event-handler" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/bootstrap/dom/event-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/bootstrap/dom/selector-engine" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/bootstrap/dom/selector-engine.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/bootstrap/dom/data" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/bootstrap/dom/data.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/bootstrap/dom/manipulator" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/bootstrap/dom/manipulator.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/backend/form" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/backend/form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/backend/validation" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/backend/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/observable_source" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/template/observable_source.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/renderer" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/template/renderer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-logger" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/logger/console-logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/resizable" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/resizable.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/i18n" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/i18n.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/scope" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/scope.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/range" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/range.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/mage-init" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/mage-init.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/keyboard" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/keyboard.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/optgroup" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/optgroup.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/after-render" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/after-render.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/autoselect" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/autoselect.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/datepicker" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/datepicker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/outer_click" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/outer_click.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/fadeVisible" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/fadeVisible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/collapsible" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/staticChecked" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/staticChecked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/simple-checked" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/simple-checked.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/bind-html" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/bind-html.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/tooltip" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/tooltip.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/bindings/color-picker" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/bindings/color-picker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/validate" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/jquery.validate.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/class" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/core/class.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="spectrum" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/spectrum/spectrum.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="tinycolor" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/spectrum/tinycolor.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/storage/local" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/core/storage/local.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/async" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/view/utils/async.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/registry/registry" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/registry/registry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/main" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/utils/main.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/validation" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/validation.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_PageBuilder/js/system/config/validator-rules-mixin" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_PageBuilder/js/system/config/validator-rules-mixin.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/knockout/template/loader" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/knockout/template/loader.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/logger/logger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry-factory" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/logger/entry-factory.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/console-output-handler" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/logger/console-output-handler.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/formatter" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/logger/formatter.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/message-pool" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/logger/message-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/levels-pool" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/logger/levels-pool.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/logger-utils" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/logger/logger-utils.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery/jquery.metadata" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/jquery/jquery.metadata.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/moment.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/template" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/utils/template.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/dom-observer" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/view/utils/dom-observer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/view/utils/bindings" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/view/utils/bindings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/arrays" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/utils/arrays.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/compare" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/utils/compare.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/misc" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/utils/misc.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/objects" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/utils/objects.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/utils/strings" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/utils/strings.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/logger/entry" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/logger/entry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/loader_old" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/loader_old.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/dropdown_old" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/dropdown_old.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_AdminNotification/toolbar_entry" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_AdminNotification/toolbar_entry.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/backend/suggest" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/backend/suggest.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/backend/floating-header" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/backend/floating-header.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/popup-window" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/popup-window.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/app" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/core/app.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/backend/menu" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/backend/menu.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/types" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/core/renderer/types.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/core/renderer/layout" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/core/renderer/layout.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/grid/provider" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/grid/provider.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="mage/requirejs/resolver" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/mage/requirejs/resolver.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/element" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/core/element/element.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/grid/data-storage" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/grid/data-storage.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/element/links" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/core/element/links.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/core/collection" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/core/collection.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_AsynchronousOperations/js/grid/listing" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_AsynchronousOperations/js/grid/listing.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_AdminNotification/js/grid/columns/message" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_AdminNotification/js/grid/columns/message.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/grid/columns/actions" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/grid/columns/actions.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/modal/modal-component" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/modal/modal-component.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_AsynchronousOperations/js/insert-form" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_AsynchronousOperations/js/insert-form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_AdminNotification/js/grid/listing" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_AdminNotification/js/grid/listing.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/grid/columns/column" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/grid/columns/column.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/components/insert-form" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/form/components/insert-form.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/grid/listing" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/grid/listing.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/lib/spinner" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/lib/spinner.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/form/components/insert" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/form/components/insert.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="Magento_Ui/js/grid/dnd" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/Magento_Ui/js/grid/dnd.js"></script></head>
+    <body data-container="body" id="html-body" class="adminhtml-order_shipment-new page-layout-admin-1column">
+        <div class="menu-wrapper _fixed" style="top: 0px;">                        <a href="http://localhost:7780/admin/admin/" data-edition="Community Edition" class="logo">
+            <img class="logo-img" src="http://localhost:7780/static/version1681922233/adminhtml/Magento/backend/en_US/images/magento-icon.svg" alt="Magento Admin Panel" title="Magento Admin Panel">
+        </a>
+
+<nav class="admin__menu">
+    <ul id="nav" role="menubar"><li data-ui-id="menu-magento-backend-dashboard" class="item-dashboard    level-0" id="menu-magento-backend-dashboard" aria-haspopup="true" role="menu-item"><a href="http://localhost:7780/admin/admin/dashboard/" class=""><span>Dashboard</span></a></li><li data-ui-id="menu-magento-sales-sales" class="item-sales _current _active parent  level-0" id="menu-magento-sales-sales" aria-haspopup="true" role="menu-item"><a href="#" onclick="return false;" class="_active"><span>Sales</span></a><div class="submenu" aria-labelledby="menu-magento-sales-sales"><strong class="submenu-title">Sales</strong><a href="#" class="action-close _close" data-role="close-submenu"></a><ul role="menu"><li data-ui-id="menu-magento-sales-sales-operation" class="item-sales-operation  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Operations</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-sales-sales-order" class="item-sales-order    level-2" role="menu-item"><a href="http://localhost:7780/admin/sales/order/" class=""><span>Orders</span></a></li><li data-ui-id="menu-magento-sales-sales-invoice" class="item-sales-invoice    level-2" role="menu-item"><a href="http://localhost:7780/admin/sales/invoice/" class=""><span>Invoices</span></a></li><li data-ui-id="menu-magento-sales-sales-shipment" class="item-sales-shipment    level-2" role="menu-item"><a href="http://localhost:7780/admin/sales/shipment/" class=""><span>Shipments</span></a></li><li data-ui-id="menu-magento-sales-sales-creditmemo" class="item-sales-creditmemo    level-2" role="menu-item"><a href="http://localhost:7780/admin/sales/creditmemo/" class=""><span>Credit Memos</span></a></li><li data-ui-id="menu-magento-paypal-paypal-billing-agreement" class="item-paypal-billing-agreement    level-2" role="menu-item"><a href="http://localhost:7780/admin/paypal/billing_agreement/" class=""><span>Billing Agreements</span></a></li><li data-ui-id="menu-magento-sales-sales-transactions" class="item-sales-transactions    level-2" role="menu-item"><a href="http://localhost:7780/admin/sales/transactions/" class=""><span>Transactions</span></a></li><li data-ui-id="menu-paypal-braintree-virtual-terminal" class="item-virtual-terminal    level-2" role="menu-item"><a href="http://localhost:7780/admin/braintree/virtual/" class=""><span>Braintree Virtual Terminal</span></a></li></ul></div></li></ul></div></li><li data-ui-id="menu-magento-catalog-catalog" class="item-catalog  parent  level-0" id="menu-magento-catalog-catalog" aria-haspopup="true" role="menu-item"><a href="#" onclick="return false;" class=""><span>Catalog</span></a><div class="submenu" aria-labelledby="menu-magento-catalog-catalog"><strong class="submenu-title">Catalog</strong><a href="#" class="action-close _close" data-role="close-submenu"></a><ul role="menu"><li data-ui-id="menu-magento-catalog-inventory" class="item-inventory  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Inventory</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-catalog-catalog-products" class="item-catalog-products    level-2" role="menu-item"><a href="http://localhost:7780/admin/catalog/product/" class=""><span>Products</span></a></li><li data-ui-id="menu-magento-catalog-catalog-categories" class="item-catalog-categories    level-2" role="menu-item"><a href="http://localhost:7780/admin/catalog/category/" class=""><span>Categories</span></a></li></ul></div></li></ul></div></li><li data-ui-id="menu-magento-customer-customer" class="item-customer  parent  level-0" id="menu-magento-customer-customer" aria-haspopup="true" role="menu-item"><a href="#" onclick="return false;" class=""><span>Customers</span></a><div class="submenu" aria-labelledby="menu-magento-customer-customer"><strong class="submenu-title">Customers</strong><a href="#" class="action-close _close" data-role="close-submenu"></a><ul role="menu"><li data-ui-id="menu-magento-customer-customer-manage" class="item-customer-manage    level-1" role="menu-item"><a href="http://localhost:7780/admin/customer/index/" class=""><span>All Customers</span></a></li><li data-ui-id="menu-magento-customer-customer-online" class="item-customer-online    level-1" role="menu-item"><a href="http://localhost:7780/admin/customer/online/" class=""><span>Now Online</span></a></li><li data-ui-id="menu-magento-loginascustomerlog-login-log" class="item-login-log    level-1" role="menu-item"><a href="http://localhost:7780/admin/loginascustomer_log/log/index/" class=""><span>Login as Customer Log</span></a></li><li data-ui-id="menu-magento-customer-customer-group" class="item-customer-group    level-1" role="menu-item"><a href="http://localhost:7780/admin/customer/group/" class=""><span>Customer Groups</span></a></li></ul></div></li><li data-ui-id="menu-magento-backend-marketing" class="item-marketing  parent  level-0" id="menu-magento-backend-marketing" aria-haspopup="true" role="menu-item"><a href="#" onclick="return false;" class=""><span>Marketing</span></a><div class="submenu" aria-labelledby="menu-magento-backend-marketing"><strong class="submenu-title">Marketing</strong><a href="#" class="action-close _close" data-role="close-submenu"></a><ul role="menu"><li class="column"><ul role="menu"><li data-ui-id="menu-magento-catalogrule-promo" class="item-promo  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Promotions</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-catalogrule-promo-catalog" class="item-promo-catalog    level-2" role="menu-item"><a href="http://localhost:7780/admin/catalog_rule/promo_catalog/" class=""><span>Catalog Price Rule</span></a></li><li data-ui-id="menu-magento-salesrule-promo-quote" class="item-promo-quote    level-2" role="menu-item"><a href="http://localhost:7780/admin/sales_rule/promo_quote/" class=""><span>Cart Price Rules</span></a></li></ul></div></li><li data-ui-id="menu-magento-backend-marketing-communications" class="item-marketing-communications  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Communications</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-email-template" class="item-template    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/email_template/" class=""><span>Email Templates</span></a></li><li data-ui-id="menu-magento-newsletter-newsletter-template" class="item-newsletter-template    level-2" role="menu-item"><a href="http://localhost:7780/admin/newsletter/template/" class=""><span>Newsletter Templates</span></a></li><li data-ui-id="menu-magento-newsletter-newsletter-queue" class="item-newsletter-queue    level-2" role="menu-item"><a href="http://localhost:7780/admin/newsletter/queue/" class=""><span>Newsletter Queue</span></a></li><li data-ui-id="menu-magento-newsletter-newsletter-subscriber" class="item-newsletter-subscriber    level-2" role="menu-item"><a href="http://localhost:7780/admin/newsletter/subscriber/" class=""><span>Newsletter Subscribers</span></a></li></ul></div></li></ul></li><li class="column"><ul role="menu"><li data-ui-id="menu-magento-backend-marketing-seo" class="item-marketing-seo  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>SEO &amp; Search</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-urlrewrite-urlrewrite" class="item-urlrewrite    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/url_rewrite/index/" class=""><span>URL Rewrites</span></a></li><li data-ui-id="menu-magento-search-search-terms" class="item-search-terms    level-2" role="menu-item"><a href="http://localhost:7780/admin/search/term/index/" class=""><span>Search Terms</span></a></li><li data-ui-id="menu-magento-search-search-synonyms" class="item-search-synonyms    level-2" role="menu-item"><a href="http://localhost:7780/admin/search/synonyms/index/" class=""><span>Search Synonyms</span></a></li><li data-ui-id="menu-magento-sitemap-catalog-sitemap" class="item-catalog-sitemap    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/sitemap/" class=""><span>Site Map</span></a></li></ul></div></li><li data-ui-id="menu-magento-backend-marketing-user-content" class="item-marketing-user-content  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>User Content</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-review-catalog-reviews-ratings-reviews-all" class="item-catalog-reviews-ratings-reviews-all    level-2" role="menu-item"><a href="http://localhost:7780/admin/review/product/index/" class=""><span>All Reviews</span></a></li><li data-ui-id="menu-magento-review-catalog-reviews-ratings-pending" class="item-catalog-reviews-ratings-pending    level-2" role="menu-item"><a href="http://localhost:7780/admin/review/product/pending/" class=""><span>Pending Reviews</span></a></li></ul></div></li></ul></li></ul></div></li><li data-ui-id="menu-magento-backend-content" class="item-content  parent  level-0" id="menu-magento-backend-content" aria-haspopup="true" role="menu-item"><a href="#" onclick="return false;" class=""><span>Content</span></a><div class="submenu" aria-labelledby="menu-magento-backend-content"><strong class="submenu-title">Content</strong><a href="#" class="action-close _close" data-role="close-submenu"></a><ul role="menu"><li data-ui-id="menu-magento-backend-content-elements" class="item-content-elements  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Elements</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-cms-cms-page" class="item-cms-page    level-2" role="menu-item"><a href="http://localhost:7780/admin/cms/page/" class=""><span>Pages</span></a></li><li data-ui-id="menu-magento-cms-cms-block" class="item-cms-block    level-2" role="menu-item"><a href="http://localhost:7780/admin/cms/block/" class=""><span>Blocks</span></a></li><li data-ui-id="menu-magento-widget-cms-widget-instance" class="item-cms-widget-instance    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/widget_instance/" class=""><span>Widgets</span></a></li><li data-ui-id="menu-magento-pagebuilder-templates" class="item-templates    level-2" role="menu-item"><a href="http://localhost:7780/admin/pagebuilder/template/" class=""><span>Templates</span></a></li></ul></div></li><li data-ui-id="menu-magento-mediagalleryui-media" class="item-media  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Media</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-mediagalleryui-media-gallery" class="item-media-gallery    level-2" role="menu-item"><a href="http://localhost:7780/admin/media_gallery/media/index/" class=""><span>Media Gallery</span></a></li></ul></div></li><li data-ui-id="menu-magento-backend-system-design" class="item-system-design  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Design</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-theme-design-config" class="item-design-config    level-2" role="menu-item"><a href="http://localhost:7780/admin/theme/design_config/" class=""><span>Configuration</span></a></li><li data-ui-id="menu-magento-theme-system-design-theme" class="item-system-design-theme    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/system_design_theme/" class=""><span>Themes</span></a></li><li data-ui-id="menu-magento-backend-system-design-schedule" class="item-system-design-schedule    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/system_design/" class=""><span>Schedule</span></a></li></ul></div></li></ul></div></li><li data-ui-id="menu-magento-reports-report" class="item-report  parent  level-0" id="menu-magento-reports-report" aria-haspopup="true" role="menu-item"><a href="#" onclick="return false;" class=""><span>Reports</span></a><div class="submenu" aria-labelledby="menu-magento-reports-report"><strong class="submenu-title">Reports</strong><a href="#" class="action-close _close" data-role="close-submenu"></a><ul role="menu"><li class="column"><ul role="menu"><li data-ui-id="menu-magento-reports-report-marketing" class="item-report-marketing  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Marketing</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-reports-report-shopcart-product" class="item-report-shopcart-product    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_shopcart/product/" class=""><span>Products in Cart</span></a></li><li data-ui-id="menu-magento-search-report-search-term" class="item-report-search-term    level-2" role="menu-item"><a href="http://localhost:7780/admin/search/term/report/" class=""><span>Search Terms</span></a></li><li data-ui-id="menu-magento-reports-report-shopcart-abandoned" class="item-report-shopcart-abandoned    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_shopcart/abandoned/" class=""><span>Abandoned Carts</span></a></li><li data-ui-id="menu-magento-newsletter-newsletter-problem" class="item-newsletter-problem    level-2" role="menu-item"><a href="http://localhost:7780/admin/newsletter/problem/" class=""><span>Newsletter Problem Reports</span></a></li></ul></div></li><li data-ui-id="menu-magento-review-report-review" class="item-report-review  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Reviews</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-review-report-review-customer" class="item-report-review-customer    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_review/customer/" class=""><span>By Customers</span></a></li><li data-ui-id="menu-magento-review-report-review-product" class="item-report-review-product    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_review/product/" class=""><span>By Products</span></a></li></ul></div></li></ul></li><li class="column"><ul role="menu"><li data-ui-id="menu-magento-reports-report-salesroot" class="item-report-salesroot  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Sales</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-reports-report-salesroot-sales" class="item-report-salesroot-sales    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_sales/sales/" class=""><span>Orders</span></a></li><li data-ui-id="menu-magento-reports-report-salesroot-tax" class="item-report-salesroot-tax    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_sales/tax/" class=""><span>Tax</span></a></li><li data-ui-id="menu-magento-reports-report-salesroot-invoiced" class="item-report-salesroot-invoiced    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_sales/invoiced/" class=""><span>Invoiced</span></a></li><li data-ui-id="menu-magento-reports-report-salesroot-shipping" class="item-report-salesroot-shipping    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_sales/shipping/" class=""><span>Shipping</span></a></li><li data-ui-id="menu-magento-reports-report-salesroot-refunded" class="item-report-salesroot-refunded    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_sales/refunded/" class=""><span>Refunds</span></a></li><li data-ui-id="menu-magento-reports-report-salesroot-coupons" class="item-report-salesroot-coupons    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_sales/coupons/" class=""><span>Coupons</span></a></li><li data-ui-id="menu-magento-paypal-report-salesroot-paypal-settlement-reports" class="item-report-salesroot-paypal-settlement-reports    level-2" role="menu-item"><a href="http://localhost:7780/admin/paypal/paypal_reports/" class=""><span>PayPal Settlement</span></a></li><li data-ui-id="menu-paypal-braintree-settlement-report" class="item-settlement-report    level-2" role="menu-item"><a href="http://localhost:7780/admin/braintree/report/" class=""><span>Braintree Settlement</span></a></li></ul></div></li></ul></li><li class="column"><ul role="menu"><li data-ui-id="menu-magento-reports-report-customers" class="item-report-customers  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Customers</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-reports-report-customers-totals" class="item-report-customers-totals    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_customer/totals/" class=""><span>Order Total</span></a></li><li data-ui-id="menu-magento-reports-report-customers-orders" class="item-report-customers-orders    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_customer/orders/" class=""><span>Order Count</span></a></li><li data-ui-id="menu-magento-reports-report-customers-accounts" class="item-report-customers-accounts    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_customer/accounts/" class=""><span>New</span></a></li></ul></div></li><li data-ui-id="menu-magento-reports-report-products" class="item-report-products  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Products</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-reports-report-products-viewed" class="item-report-products-viewed    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_product/viewed/" class=""><span>Views</span></a></li><li data-ui-id="menu-magento-reports-report-products-bestsellers" class="item-report-products-bestsellers    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_sales/bestsellers/" class=""><span>Bestsellers</span></a></li><li data-ui-id="menu-magento-reports-report-products-lowstock" class="item-report-products-lowstock    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_product/lowstock/" class=""><span>Low Stock</span></a></li><li data-ui-id="menu-magento-reports-report-products-sold" class="item-report-products-sold    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_product/sold/" class=""><span>Ordered</span></a></li><li data-ui-id="menu-magento-downloadable-report-products-downloads" class="item-report-products-downloads    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_product/downloads/" class=""><span>Downloads</span></a></li></ul></div></li><li data-ui-id="menu-magento-reports-report-statistics" class="item-report-statistics  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Statistics</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-reports-report-statistics-refresh" class="item-report-statistics-refresh    level-2" role="menu-item"><a href="http://localhost:7780/admin/reports/report_statistics/" class=""><span>Refresh Statistics</span></a></li></ul></div></li></ul></li><li class="column"><ul role="menu"><li data-ui-id="menu-magento-analytics-business-intelligence" class="item-business-intelligence  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Business Intelligence</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-analytics-advanced-reporting" class="item-advanced-reporting    level-2" role="menu-item"><a href="http://localhost:7780/admin/analytics/reports/show/" target="_blank" class=""><span>Advanced Reporting</span></a></li><li data-ui-id="menu-magento-analytics-bi-essentials" class="item-bi-essentials    level-2" role="menu-item"><a href="http://localhost:7780/admin/analytics/biessentials/signup/" target="_blank" class=""><span>BI Essentials</span></a></li></ul></div></li></ul></li></ul></div></li><li data-ui-id="menu-magento-backend-stores" class="item-stores  parent  level-0" id="menu-magento-backend-stores" aria-haspopup="true" role="menu-item"><a href="#" onclick="return false;" class=""><span>Stores</span></a><div class="submenu" aria-labelledby="menu-magento-backend-stores"><strong class="submenu-title">Stores</strong><a href="#" class="action-close _close" data-role="close-submenu"></a><ul role="menu"><li class="column"><ul role="menu"><li data-ui-id="menu-magento-backend-stores-settings" class="item-stores-settings  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Settings</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-backend-system-store" class="item-system-store    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/system_store/" class=""><span>All Stores</span></a></li><li data-ui-id="menu-magento-config-system-config" class="item-system-config    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/system_config/" class=""><span>Configuration</span></a></li><li data-ui-id="menu-magento-checkoutagreements-sales-checkoutagreement" class="item-sales-checkoutagreement    level-2" role="menu-item"><a href="http://localhost:7780/admin/checkout/agreement/" class=""><span>Terms and Conditions</span></a></li><li data-ui-id="menu-magento-sales-system-order-statuses" class="item-system-order-statuses    level-2" role="menu-item"><a href="http://localhost:7780/admin/sales/order_status/" class=""><span>Order Status</span></a></li></ul></div></li><li data-ui-id="menu-magento-inventoryadminui-inventory" class="item-inventory  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Inventory</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-inventoryadminui-source" class="item-source    level-2" role="menu-item"><a href="http://localhost:7780/admin/inventory/source/index/" class=""><span>Sources</span></a></li><li data-ui-id="menu-magento-inventoryadminui-stock" class="item-stock    level-2" role="menu-item"><a href="http://localhost:7780/admin/inventory/stock/index/" class=""><span>Stocks</span></a></li></ul></div></li><li data-ui-id="menu-magento-tax-sales-tax" class="item-sales-tax  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Taxes</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-tax-sales-tax-rules" class="item-sales-tax-rules    level-2" role="menu-item"><a href="http://localhost:7780/admin/tax/rule/" class=""><span>Tax Rules</span></a></li><li data-ui-id="menu-magento-tax-sales-tax-rates" class="item-sales-tax-rates    level-2" role="menu-item"><a href="http://localhost:7780/admin/tax/rate/" class=""><span>Tax Zones and Rates</span></a></li></ul></div></li></ul></li><li class="column"><ul role="menu"><li data-ui-id="menu-magento-currencysymbol-system-currency" class="item-system-currency  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Currency</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-currencysymbol-system-currency-rates" class="item-system-currency-rates    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/system_currency/" class=""><span>Currency Rates</span></a></li><li data-ui-id="menu-magento-currencysymbol-system-currency-symbols" class="item-system-currency-symbols    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/system_currencysymbol/" class=""><span>Currency Symbols</span></a></li></ul></div></li><li data-ui-id="menu-magento-backend-stores-attributes" class="item-stores-attributes  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Attributes</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-catalog-catalog-attributes-attributes" class="item-catalog-attributes-attributes    level-2" role="menu-item"><a href="http://localhost:7780/admin/catalog/product_attribute/" class=""><span>Product</span></a></li><li data-ui-id="menu-magento-catalog-catalog-attributes-sets" class="item-catalog-attributes-sets    level-2" role="menu-item"><a href="http://localhost:7780/admin/catalog/product_set/" class=""><span>Attribute Set</span></a></li><li data-ui-id="menu-magento-review-catalog-reviews-ratings-ratings" class="item-catalog-reviews-ratings-ratings    level-2" role="menu-item"><a href="http://localhost:7780/admin/review/rating/" class=""><span>Rating</span></a></li></ul></div></li><li data-ui-id="menu-magento-backend-other-settings" class="item-other-settings    level-1" role="menu-item"></li></ul></li></ul></div></li><li data-ui-id="menu-magento-backend-system" class="item-system  parent  level-0" id="menu-magento-backend-system" aria-haspopup="true" role="menu-item"><a href="#" onclick="return false;" class=""><span>System</span></a><div class="submenu" aria-labelledby="menu-magento-backend-system"><strong class="submenu-title">System</strong><a href="#" class="action-close _close" data-role="close-submenu"></a><ul role="menu"><li class="column"><ul role="menu"><li data-ui-id="menu-magento-backend-system-convert" class="item-system-convert  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Data Transfer</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-importexport-system-convert-import" class="item-system-convert-import    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/import/" class=""><span>Import</span></a></li><li data-ui-id="menu-magento-importexport-system-convert-export" class="item-system-convert-export    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/export/" class=""><span>Export</span></a></li><li data-ui-id="menu-magento-taximportexport-system-convert-tax" class="item-system-convert-tax    level-2" role="menu-item"><a href="http://localhost:7780/admin/tax/rate/importExport/" class=""><span>Import/Export Tax Rates</span></a></li><li data-ui-id="menu-magento-importexport-system-convert-history" class="item-system-convert-history    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/history/" class=""><span>Import History</span></a></li></ul></div></li><li data-ui-id="menu-magento-integration-system-extensions" class="item-system-extensions  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Extensions</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-integration-system-integrations" class="item-system-integrations    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/integration/" class=""><span>Integrations</span></a></li></ul></div></li><li data-ui-id="menu-magento-backend-system-tools" class="item-system-tools  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Tools</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-backend-system-cache" class="item-system-cache    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/cache/" class=""><span>Cache Management</span></a></li><li data-ui-id="menu-magento-indexer-system-index" class="item-system-index    level-2" role="menu-item"><a href="http://localhost:7780/admin/indexer/indexer/list/" class=""><span>Index Management</span></a></li></ul></div></li></ul></li><li class="column"><ul role="menu"><li data-ui-id="menu-magento-user-system-acl" class="item-system-acl  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Permissions</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-user-system-acl-users" class="item-system-acl-users    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/user/" class=""><span>All Users</span></a></li><li data-ui-id="menu-magento-user-system-acl-locks" class="item-system-acl-locks    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/locks/" class=""><span>Locked Users</span></a></li><li data-ui-id="menu-magento-user-system-acl-roles" class="item-system-acl-roles    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/user_role/" class=""><span>User Roles</span></a></li></ul></div></li><li data-ui-id="menu-magento-asynchronousoperations-system-magento-logging" class="item-system-magento-logging  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Action Logs</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-asynchronousoperations-system-magento-logging-bulk-operations" class="item-system-magento-logging-bulk-operations    level-2" role="menu-item"><a href="http://localhost:7780/admin/bulk/index/" class=""><span>Bulk Actions</span></a></li></ul></div></li><li data-ui-id="menu-magento-backend-system-other-settings" class="item-system-other-settings  parent  level-1" role="menu-item"><strong class="submenu-group-title" role="presentation"><span>Other Settings</span></strong><div class="submenu"><ul role="menu"><li data-ui-id="menu-magento-adminnotification-system-adminnotification" class="item-system-adminnotification    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/notification/" class=""><span>Notifications</span></a></li><li data-ui-id="menu-magento-variable-system-variable" class="item-system-variable    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/system_variable/" class=""><span>Custom Variables</span></a></li><li data-ui-id="menu-magento-encryptionkey-system-crypt-key" class="item-system-crypt-key    level-2" role="menu-item"><a href="http://localhost:7780/admin/admin/crypt_key/" class=""><span>Manage Encryption Key</span></a></li></ul></div></li></ul></li></ul></div></li><li data-ui-id="menu-magento-marketplace-partners" class="item-partners   last level-0" id="menu-magento-marketplace-partners" aria-haspopup="true" role="menu-item"><a href="http://localhost:7780/admin/marketplace/index/" class=""><span>Find Partners &amp; Extensions</span></a></li></ul></nav>
+
+</div>
+
+
+<script>
+require([
+    "jquery",
+    "jquery/ui"
+], function($){
+
+    $.extend(true, $, {
+        calendarConfig: {
+            dayNames: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            dayNamesMin: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
+            monthNames: ["January","February","March","April","May","June","July","August","September","October","November","December"],
+            monthNamesShort: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+            infoTitle: "About\u0020the\u0020calendar",
+            firstDay: 0,
+            closeText: "Close",
+            currentText: "Go\u0020Today",
+            prevText: "Previous",
+            nextText: "Next",
+            weekHeader: "WK",
+            timeText: "Time",
+            hourText: "Hour",
+            minuteText: "Minute",
+            dateFormat: $.datepicker.RFC_2822,
+            showOn: "button",
+            showAnim: "",
+            changeMonth: true,
+            changeYear: true,
+            buttonImageOnly: null,
+            buttonImage: null,
+            showButtonPanel: true,
+            showOtherMonths: true,
+            showWeek: false,
+            timeFormat: '',
+            showTime: false,
+            showHour: false,
+            showMinute: false,
+            serverTimezoneSeconds: 1791015653,
+            serverTimezoneOffset: -14400,
+            yearRange: '1926\u003A2126'
+        }
+    });
+
+enUS = {"m":{"wide":["January","February","March","April","May","June","July","August","September","October","November","December"],"abbr":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]}}; // en_US locale reference
+
+});</script>
+<script>
+    window.cookiesConfig = window.cookiesConfig || {};
+    window.cookiesConfig.secure = false;
+</script><script>    require.config({
+        map: {
+            '*': {
+                wysiwygAdapter: 'mage/adminhtml/wysiwyg/tiny_mce/tinymce5Adapter'
+            }
+        }
+    });</script><div class="page-wrapper"><div class="notices-wrapper">    <noscript>
+        <div class="messages">
+            <div class="message message-warning message-noscript">
+                <strong>JavaScript may be disabled in your browser.</strong>
+                To use this website you must first enable JavaScript in your browser.            </div>
+        </div>
+    </noscript>
+<!--
+/**
+ * Copyright &copy; Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+--><div class="admin__data-grid-outer-wrap" data-bind="scope: 'notification_area.notification_area'">
+    <div data-role="spinner" data-component="notification_area.notification_area.columns" class="admin__data-grid-loading-mask" style="height: 51px; display: none;">
+        <div class="spinner">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+    <!-- ko template: getTemplate() -->
+<!-- ko foreach: {data: elems, as: 'element'} -->
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<div id="system_messages" class="message-system" data-bind="visible: totalRecords, collapsible" style="display: none;">
+    <div class="message-system-inner" data-bind="outerClick: fixLoaderHeight.bind($data, true)">
+        <div class="message-system-short">
+            <button class="message-system-action-dropdown" data-bind="toggleCollapsible">
+                <span>
+                    <!-- ko i18n: 'System Messages' --><span>System Messages</span><!-- /ko -->:
+                    <!-- ko text: totalRecords -->0<!-- /ko -->
+                </span>
+            </button>
+            <!-- ko if: rows[0] --><!-- /ko -->
+        </div>
+        <div class="message-system-collapsible">
+            <ul class="message-system-list">
+                <!-- ko repeat: {foreach: rows, item: '$row'} --><!-- /ko -->
+            </ul>
+            <!-- ko if: isAllowed --><div class="message-system-summary">
+                <a class="action__message-log" href="#" data-bind="text: dismissAllText, click: dismissAll">Dismiss All Completed Tasks</a>
+                <a class="action__message-log" data-bind="attr: {
+                        href: link
+                    }, text: linkText" href="http://localhost:7780/admin/bulk/index/">Bulk Actions Log</a>
+            </div><!-- /ko -->
+        </div>
+    </div>
+</div>
+<!-- /ko --><!-- /ko -->
+
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+<!-- ko foreach: {data: elems, as: 'element'} -->
+    <!-- ko if: hasTemplate() --><!-- ko template: getTemplate() -->
+
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+<!-- /ko --><!-- /ko -->
+<!-- /ko -->
+<!-- /ko -->
+</div>
+<!-- BLOCK notification_window --><!-- /BLOCK notification_window --></div><header class="page-header row"><div class="page-header-hgroup col-l-8 col-m-6">
+<div class="page-title-wrapper">
+    <h1 class="page-title">New Shipment</h1>
+    </div>
+</div><div class="page-header-actions col-l-4 col-m-6">        <div class="admin-user admin__action-dropdown-wrap">
+            <a href="http://localhost:7780/admin/admin/system_account/index/" class="admin__action-dropdown" title="My Account" data-toggle="dropdown">
+                <span class="admin__action-dropdown-text">
+                    <span class="admin-user-account-text">admin</span>
+                </span>
+            </a>
+            <ul class="admin__action-dropdown-menu">
+                                <li>
+                    <a href="http://localhost:7780/admin/admin/system_account/index/" data-ui-id="user-user-account-settings" title="Account Setting">
+                        Account Setting (<span class="admin-user-name">admin</span>)
+                    </a>
+                </li>
+                                <li>
+                    <a href="http://localhost:7780/" title="Customer View" target="_blank" class="store-front">
+                        Customer View                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:7780/admin/admin/auth/logout/" class="account-signout" title="Sign Out">
+                        Sign Out                    </a>
+                </li>
+            </ul>
+        </div>
+
+<div class="notifications-wrapper admin__action-dropdown-wrap" data-notification-count="0">
+            <a class="notifications-action admin__action-dropdown" href="http://localhost:7780/admin/admin/notification/index/" title="Notifications">
+        </a>
+    </div>
+<div class="search-global">
+    <form action="#" id="form-search">
+        <div class="search-global-field">
+            <label class="search-global-label" for="search-global"></label>
+            <input type="hidden" name="query"><div class="mage-suggest"><div class="mage-suggest-inner"><input type="text" class="search-global-input" id="search-global" autocomplete="off"><div class="autocomplete-results" style="display: none;"></div></div></div>
+            <button type="submit" class="search-global-action" title="Search"></button>
+        </div>
+    </form>
+    <script data-template="search-suggest" type="text/x-magento-template">
+        <ul class="search-global-menu">
+        <li class="item">
+            <a id="searchPreviewProducts" href="http://localhost:7780/admin/catalog/product/index/?search=<%- data.term%>" class="title">"<%- data.term%>" in Products</a>
+        </li>
+        <li class="item">
+            <a id="searchPreviewOrders" href="http://localhost:7780/admin/sales/order/index/?search=<%- data.term%>" class="title">"<%- data.term%>" in Orders</a>
+        </li>
+        <li class="item">
+            <a id="searchPreviewCustomers" href="http://localhost:7780/admin/customer/index/index/?search=<%- data.term%>" class="title">"<%- data.term%>" in Customers</a>
+        </li>
+        <li class="item">
+            <a id="searchPreviewPages" href="http://localhost:7780/admin/cms/page/index/?search=<%- data.term%>" class="title">"<%- data.term%>" in Pages</a>
+        </li>
+            <% if (data.items.length) { %>
+            <% _.each(data.items, function(value){ %>
+            <li class="item"
+                <%= data.optionData(value) %>
+                >
+                <a href="<%- value.url %>" class="title"><%- value.name %></a>
+                <span class="type"><%- value.type %></span>
+                <%- value.description || "" %>
+            </li>
+            <% }); %>
+        <% } else { %>
+            <li>
+                <span class="mage-suggest-no-records">
+                    No records found.                </span>
+            </li>
+        <% } %>
+        </ul>
+    </script>
+</div>
+</div></header><div><input name="form_key" type="hidden" value="FORMKEY"></div>
+<main id="anchor-content" class="page-content"><div class="page-main-actions">    <div class="page-actions-placeholder"></div><div class="page-actions" data-ui-id="page-actions-toolbar-content-header"><div class="page-actions-inner" data-title="New Shipment"><div class="page-actions-buttons">
+        <button id="back" title="Back" type="button" class="action-default scalable back" backend-button-widget-hook-id="buttonIdlOKR1WW3Kg" data-ui-id="sales-shipment-create-back-button">
+    <span>Back</span>
+</button>
+<button id="reset" title="Reset" type="button" class="action-default scalable reset" backend-button-widget-hook-id="buttonIdczMXR94a3V" data-ui-id="sales-shipment-create-reset-button">
+    <span>Reset</span>
+</button>
+    </div></div></div>
+</div><div id="page:main-container" class="page-columns"><div class="admin__old"><div id="container" class="main-col"><form id="edit_form" method="post" action="http://localhost:7780/admin/admin/order_shipment/save/order_id/299/" novalidate="novalidate">
+    <div><input name="form_key" type="hidden" value="FORMKEY"></div>
+        
+<section class="admin__page-section order-view-account-information">
+    <div class="admin__page-section-title">
+        <span class="title">Order &amp; Account Information</span>
+    </div>
+    <div class="admin__page-section-content">
+        <div class="admin__page-section-item order-information">
+                                    <div class="admin__page-section-item-title">
+                <span class="title">
+                                            <a href="http://localhost:7780/admin/sales/order/view/order_id/299/">Order # 000000299</a>
+                        <span>(The order confirmation email was sent)</span>
+                                    </span>
+            </div>
+            <div class="admin__page-section-item-content">
+                <table class="admin__table-secondary order-information-table">
+                <tbody><tr>
+                    <th>Order Date</th>
+                    <td>May 31, 2023, 2:55:09 AM</td>
+                </tr>
+                                <tr>
+                    <th>Order Status</th>
+                    <td><span id="order_status">Pending</span></td>
+                </tr>
+                                                    <tr>
+                        <th>Purchased From</th>
+                        <td>Main Website<br>Main Website Store<br>Default Store View</td>
+                    </tr>
+                                                                                    <tr>
+                        <th>Placed from IP</th>
+                        <td>128.2.205.52</td>
+                    </tr>
+                                                            </tbody></table>
+            </div>
+        </div>
+
+        <div class="admin__page-section-item order-account-information">
+                        <div class="admin__page-section-item-title">
+                <span class="title">Account Information</span>
+                <div class="actions">
+                                            <a href="http://localhost:7780/admin/customer/index/edit/id/5/" target="_blank">
+                            Edit Customer                        </a>
+                                    </div>
+            </div>
+            <div class="admin__page-section-item-content">
+                <table class="admin__table-secondary order-account-information-table">
+                    <tbody><tr>
+                        <th>Customer Name</th>
+                        <td>
+                                                            <a href="http://localhost:7780/admin/customer/index/edit/id/5/" target="_blank">
+                                    <span>Sarah Miller</span>
+                                </a>
+                                                    </td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td><a href="mailto:helloworld@yahoo.com">helloworld@yahoo.com</a></td>
+                    </tr>
+                                            <tr>
+                            <th>Customer Group</th>
+                            <td>General</td>
+                        </tr>
+                                                                            </tbody></table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="admin__page-section order-addresses">
+    <div class="admin__page-section-title">
+        <span class="title">Address Information</span>
+    </div>
+    <div class="admin__page-section-content">
+        <div class="admin__page-section-item order-billing-address">
+                        <div class="admin__page-section-item-title">
+                <span class="title">Billing Address</span>
+                <div class="actions"><a href="http://localhost:7780/admin/sales/order/address/address_id/598/">Edit</a></div>
+            </div>
+            <address class="admin__page-section-item-content">Sarah Miller<br>
+
+321 Maple Avenue<br>
+
+
+
+Oakland,  California, 94602<br>
+United States<br>
+T: 5107819902
+
+</address>
+        </div>
+                    <div class="admin__page-section-item order-shipping-address">
+                                <div class="admin__page-section-item-title">
+                    <span class="title">Shipping Address</span>
+                    <div class="actions"><a href="http://localhost:7780/admin/sales/order/address/address_id/597/">Edit</a></div>
+                </div>
+                <address class="admin__page-section-item-content">Sarah Miller<br>
+
+321 Maple Avenue<br>
+
+
+
+Oakland,  California, 94602<br>
+United States<br>
+T: 5107819902
+
+</address>
+            </div>
+            </div>
+</section>
+    <div class="admin__page-section">
+        <div class="admin__page-section-title">
+            <span class="title">Payment &amp; Shipping Method</span>
+        </div>
+        <div class="admin__page-section-content">
+            <div class="admin__page-section-item order-payment-method">
+                                <div class="admin__page-section-item-title">
+                    <span class="title">Payment Information</span>
+                </div>
+                <div class="admin__page-section-item-content">
+                    <div>Check / Money order        </div>
+                    <div class="order-payment-currency">
+                        The order was placed using USD.                    </div>
+                </div>
+            </div>
+            <div class="admin__page-section-item order-shipping-address">
+                                <div class="admin__page-section-item-title">
+                    <span class="title">Shipping Information</span>
+                </div>
+                <div class="admin__page-section-item-content shipping-description-wrapper">
+                    <div class="shipping-description-title">
+                        Flat Rate - Fixed                    </div>
+                    <div class="shipping-description-content">
+                        Total Shipping Charges:
+
+                                                                                                                            <span class="price">$25.00</span>                                            </div>
+                </div>
+                <div><script>
+require(['prototype'], function(){
+
+    //<![CDATA[
+    var trackingControl;
+    trackingControl = {
+        index : 0,
+        add : function () {
+            this.index++;
+            var data = {index:this.index};
+            Element.insert($('track_row_container'), {
+                bottom: this.template({
+                    data: data
+                })
+            });
+            $('trackingC' + this.index).disabled = false;
+            $('trackingT' + this.index).disabled = false;
+            $('trackingN' + this.index).disabled = false;
+            this.bindCurrierOnchange();
+        },
+        deleteRow : function(event) {
+            var row = Event.findElement(event, 'tr');
+            if (row) {
+                row.parentNode.removeChild(row)
+            }
+        },
+        bindCurrierOnchange : function() {
+            var elems = $('tracking_numbers_table').select('.select');
+            elems.each(function (elem) {
+                if (!elem.onchangeBound) {
+                    elem.onchangeBound = true;
+                    elem.valueInput = $(elem.parentNode.parentNode).select('.number-title')[0];
+                    elem.observe('change', this.currierOnchange);
+                }
+            }.bind(this));
+        },
+        currierOnchange : function(event) {
+            var elem = Event.element(event);
+            var option = elem.options[elem.selectedIndex];
+            if (option.value && option.value != 'custom') {
+                elem.valueInput.value = option.text;
+            }
+            else {
+                elem.valueInput.value = '';
+            }
+        }
+    };
+
+    window.trackingControl = trackingControl;
+    //]]>
+
+});
+</script>
+<script id="track_row_template" type="text/x-magento-template">
+    <tr>
+        <td class="col-carrier">
+            <select name="tracking[<%- data.index %>][carrier_code]"
+                    id="trackingC<%- data.index %>"
+                    class="select admin__control-select carrier"
+                    disabled="disabled">
+                                    <option value="custom">Custom Value</option>
+                                    <option value="dhl">DHL</option>
+                                    <option value="fedex">Federal Express</option>
+                                    <option value="ups">United Parcel Service</option>
+                                    <option value="usps">United States Postal Service</option>
+                            </select>
+        </td>
+        <td class="col-title">
+            <input class="input-text admin__control-text number-title"
+                   type="text"
+                   name="tracking[<%- data.index %>][title]"
+                   id="trackingT<%- data.index %>"
+                   value=""
+                   disabled="disabled" />
+        </td>
+        <td class="col-number">
+            <input class="input-text admin__control-text required-entry"
+                   type="text"
+                   name="tracking[<%- data.index %>][number]"
+                   id="trackingN<%- data.index %>"
+                   value=""
+                   disabled="disabled" />
+        </td>
+        <td class="col-delete">
+            <button
+                type="button"
+                class="action-default action-delete"
+                onclick="trackingControl.deleteRow(event);return false">
+                <span>Delete</span>
+            </button>
+        </td>
+    </tr>
+</script>
+
+<div class="admin__control-table-wrapper">
+    <table class="data-table admin__control-table" id="tracking_numbers_table">
+        <thead>
+        <tr class="headings">
+            <th class="col-carrier">Carrier</th>
+            <th class="col-title">Title</th>
+            <th class="col-number">Number</th>
+            <th class="col-delete">Action</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+            <td colspan="4" class="col-actions-add"><button id="id_q9FLXRRgCjmzuWXbw9aoroJDrc1Gpfbe" title="Add Tracking Number" type="button" class="action-default scalable" backend-button-widget-hook-id="buttonIdJ7ucWKFYjo" data-ui-id="shipment-tracking-add-button">
+    <span>Add Tracking Number</span>
+</button>
+<script type="text/javascript">    function eventListener0Se5xKkqAN () {
+        trackingControl.add();
+    }
+    var listenedElement0Se5xKkqANArray = document.querySelectorAll("*[backend-button-widget-hook-id='buttonIdJ7ucWKFYjo']");
+    if(listenedElement0Se5xKkqANArray.length !== 'undefined'){
+        listenedElement0Se5xKkqANArray.forEach(function(element) {
+            if (element) {
+                element.onclick = function (event) {
+                    var targetElement = element;
+                    if (event && event.target) {
+                        targetElement = event.target;
+                    }
+                    return eventListener0Se5xKkqAN.apply(targetElement);
+                };
+            }
+        });
+    }</script></td>
+        </tr>
+        </tfoot>
+        <tbody id="track_row_container">
+        </tbody>
+    </table>
+</div>
+<script>
+require([
+    'mage/template',
+    'prototype'
+], function (mageTemplate) {
+
+    //<![CDATA[
+    trackingControl.template = mageTemplate('#track_row_template');
+    //]]>
+
+});
+</script></div>
+            </div>
+        </div>
+    </div>
+    <div>
+<section class="admin__page-section inventory">
+    <div class="admin__page-section-title">
+        <span class="title">Inventory</span>
+    </div>
+    <div class="admin__page-section-content">
+        Source:        Default Source    </div>
+</section>
+<input name="sourceCode" type="hidden" value="default">
+</div>
+    <div id="ship_items_container">
+        
+<section class="admin__page-section">
+    <div class="admin__page-section-title">
+        <span class="title">Items to Ship</span>
+    </div>
+    <div class="admin__table-wrapper">
+        <table class="data-table admin__table-primary order-shipment-table">
+            <thead>
+                <tr class="headings">
+                    <th class="col-product"><span>Product</span></th>
+                    <th class="col-ordered-qty"><span>Qty</span></th>
+                    <th class="col-qty last">
+                        <span>Qty to Ship</span>
+                    </th>
+                                    </tr>
+            </thead>
+                                        <tbody class="odd">
+                    <tr>
+    <td class="col-product">
+    <div id="order_item_1565_title" class="product-title">
+        Argus All-Weather Tank    </div>
+    <div class="product-sku-block">
+        <span>SKU:</span>
+        MT07-M-Gray    </div>
+
+            <dl class="item-options">
+                            <dt>Color:</dt>
+                <dd>
+                                                                                                                    Gray                                                            </dd>
+                            <dt>Size:</dt>
+                <dd>
+                                                                                                                    M                                                            </dd>
+                    </dl>
+        </td>
+    <td class="col-ordered-qty">    <table class="qty-table">
+        <tbody><tr>
+            <th>Ordered</th>
+            <td>1</td>
+        </tr>
+
+        
+        
+        
+        
+    </tbody></table>
+</td>
+    <td class="col-qty last">
+                    <input type="text" class="input-text admin__control-text qty-item" name="shipment[items][1565]" value="1">
+            </td>
+    </tr>
+                                    </tbody>
+                            <tbody class="even">
+                    <tr>
+    <td class="col-product">
+    <div id="order_item_1567_title" class="product-title">
+        Marco Lightweight Active Hoodie    </div>
+    <div class="product-sku-block">
+        <span>SKU:</span>
+        MH13-S-Green    </div>
+
+            <dl class="item-options">
+                            <dt>Color:</dt>
+                <dd>
+                                                                                                                    Green                                                            </dd>
+                            <dt>Size:</dt>
+                <dd>
+                                                                                                                    S                                                            </dd>
+                    </dl>
+        </td>
+    <td class="col-ordered-qty">    <table class="qty-table">
+        <tbody><tr>
+            <th>Ordered</th>
+            <td>1</td>
+        </tr>
+
+        
+        
+        
+        
+    </tbody></table>
+</td>
+    <td class="col-qty last">
+                    <input type="text" class="input-text admin__control-text qty-item" name="shipment[items][1567]" value="1">
+            </td>
+    </tr>
+                                    </tbody>
+                            <tbody class="odd">
+                    <tr>
+    <td class="col-product">
+    <div id="order_item_1569_title" class="product-title">
+        Tiffany Fitness Tee    </div>
+    <div class="product-sku-block">
+        <span>SKU:</span>
+        WS09-XL-Blue    </div>
+
+            <dl class="item-options">
+                            <dt>Color:</dt>
+                <dd>
+                                                                                                                    Blue                                                            </dd>
+                            <dt>Size:</dt>
+                <dd>
+                                                                                                                    XL                                                            </dd>
+                    </dl>
+        </td>
+    <td class="col-ordered-qty">    <table class="qty-table">
+        <tbody><tr>
+            <th>Ordered</th>
+            <td>1</td>
+        </tr>
+
+        
+        
+        
+        
+    </tbody></table>
+</td>
+    <td class="col-qty last">
+                    <input type="text" class="input-text admin__control-text qty-item" name="shipment[items][1569]" value="1">
+            </td>
+    </tr>
+                                    </tbody>
+                            <tbody class="even">
+                    <tr>
+    <td class="col-product">
+    <div id="order_item_1571_title" class="product-title">
+        Nadia Elements Shell    </div>
+    <div class="product-sku-block">
+        <span>SKU:</span>
+        WJ10-XS-Yellow    </div>
+
+            <dl class="item-options">
+                            <dt>Color:</dt>
+                <dd>
+                                                                                                                    Yellow                                                            </dd>
+                            <dt>Size:</dt>
+                <dd>
+                                                                                                                    XS                                                            </dd>
+                    </dl>
+        </td>
+    <td class="col-ordered-qty">    <table class="qty-table">
+        <tbody><tr>
+            <th>Ordered</th>
+            <td>1</td>
+        </tr>
+
+        
+        
+        
+        
+    </tbody></table>
+</td>
+    <td class="col-qty last">
+                    <input type="text" class="input-text admin__control-text qty-item" name="shipment[items][1571]" value="1">
+            </td>
+    </tr>
+                                    </tbody>
+                            <tbody class="odd">
+                    <tr>
+    <td class="col-product">
+    <div id="order_item_1573_title" class="product-title">
+        Gwen Drawstring Bike Short    </div>
+    <div class="product-sku-block">
+        <span>SKU:</span>
+        WSH03-28-Orange    </div>
+
+            <dl class="item-options">
+                            <dt>Color:</dt>
+                <dd>
+                                                                                                                    Orange                                                            </dd>
+                            <dt>Size:</dt>
+                <dd>
+                                                                                                                    28                                                            </dd>
+                    </dl>
+        </td>
+    <td class="col-ordered-qty">    <table class="qty-table">
+        <tbody><tr>
+            <th>Ordered</th>
+            <td>1</td>
+        </tr>
+
+        
+        
+        
+        
+    </tbody></table>
+</td>
+    <td class="col-qty last">
+                    <input type="text" class="input-text admin__control-text qty-item" name="shipment[items][1573]" value="1">
+            </td>
+    </tr>
+                                    </tbody>
+                    </table>
+    </div>
+</section>
+
+<section class="admin__page-section">
+    <div class="admin__page-section-title">
+        <span class="title">Shipment Total</span>
+    </div>
+    <div class="admin__page-section-content order-comments-history">
+        <div class="admin__page-section-item">
+            <div class="admin__page-section-item-title">
+                <span class="title">Shipment Comments</span>
+            </div>
+            <div class="admin__page-section-item-content">
+                <div id="order-history_form" class="admin__field">
+                    <label class="admin__field-label" for="shipment_comment_text">
+                        <span>Comment Text</span></label>
+                    <div class="admin__field-control">
+                        <textarea id="shipment_comment_text" class="admin__control-textarea" name="shipment[comment_text]" rows="3" cols="5"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="admin__page-section-item order-totals order-totals-actions">
+        <div class="admin__page-section-item-title">
+            <span class="title">Shipment Options</span>
+        </div>
+        <div class="admin__page-section-item-content">
+            
+            <div class="field choice admin__field admin__field-option field-append">
+                <input id="notify_customer" class="admin__control-checkbox" name="shipment[comment_customer_notify]" value="1" type="checkbox" disabled="">
+                <label class="admin__field-label" for="notify_customer">
+                    <span>Append Comments</span></label>
+            </div>
+
+                            <div class="field choice admin__field admin__field-option field-email">
+                    <input id="send_email" class="admin__control-checkbox" name="shipment[send_email]" value="1" type="checkbox">
+                    <label class="admin__field-label" for="send_email">
+                        <span>Email Copy of Shipment</span></label>
+                </div>
+                                    <div class="order-history-comments-actions actions">
+                <button id="id_puyAP9FTHiuOTWxGsaDuju7kIujJvLQH" title="Submit Shipment" type="button" class="action-default scalable save submit-button primary" backend-button-widget-hook-id="buttonIdh6agdA280d" data-ui-id="order-items-submit-button">
+    <span>Submit Shipment</span>
+</button>
+<script type="text/javascript">    function eventListenerDZRX1FWXxS () {
+        submitShipment(this);;
+    }
+    var listenedElementDZRX1FWXxSArray = document.querySelectorAll("*[backend-button-widget-hook-id='buttonIdh6agdA280d']");
+    if(listenedElementDZRX1FWXxSArray.length !== 'undefined'){
+        listenedElementDZRX1FWXxSArray.forEach(function(element) {
+            if (element) {
+                element.onclick = function (event) {
+                    var targetElement = element;
+                    if (event && event.target) {
+                        targetElement = event.target;
+                    }
+                    return eventListenerDZRX1FWXxS.apply(targetElement);
+                };
+            }
+        });
+    }</script>                            </div>
+        </div>
+    </div>
+</section>
+<script>
+require([
+    "jquery",
+    "Magento_Ui/js/modal/alert",
+    "prototype"
+], function(jQuery, alert){
+
+//<![CDATA[
+var sendEmailCheckbox = $('send_email');
+if (sendEmailCheckbox) {
+    var notifyCustomerCheckbox = $('notify_customer');
+    var shipmentCommentText = $('shipment_comment_text');
+    Event.observe(sendEmailCheckbox, 'change', bindSendEmail);
+    bindSendEmail();
+}
+function bindSendEmail() {
+    if (sendEmailCheckbox.checked == true) {
+        notifyCustomerCheckbox.disabled = false;
+    }
+    else {
+        notifyCustomerCheckbox.disabled = true;
+    }
+}
+window.toggleCreateLabelCheckbox = function() {
+    var checkbox = $('create_shipping_label');
+    var submitButton = checkbox.up('.order-totals').select('.submit-button span')[0];
+    if (checkbox.checked) {
+        submitButton.innerText += '...';
+    } else {
+        submitButton.innerText = submitButton.innerText.replace(/\.\.\.$/, '');
+    }
+}
+window.submitShipment = function(btn) {
+    if (!validQtyItems()) {
+        alert({
+            content: 'Invalid\u0020value\u0028s\u0029\u0020for\u0020Qty\u0020to\u0020Ship'
+        });
+        return;
+    }
+    var checkbox = $(btn).up('.order-totals').select('#create_shipping_label')[0];
+    if (checkbox && checkbox.checked) {
+        packaging.showWindow();
+    } else {
+        disableElements('submit-button');
+        // Temporary solution will be replaced after refactoring order functionality
+        jQuery('#edit_form').on('invalid-form.validate', function() {
+            enableElements('submit-button');
+            jQuery('#edit_form').off('invalid-form.validate');
+        });
+        jQuery('#edit_form').triggerHandler('save');
+    }
+}
+window.validQtyItems = function() {
+    var valid = true;
+    $$('.qty-item').each(function(item) {
+        var val = parseFloat(item.value);
+        if (isNaN(val) || val < 0) {
+            valid = false;
+        }
+    });
+    return valid;
+}
+
+window.bindSendEmail = bindSendEmail;
+
+window.shipmentCommentText = shipmentCommentText;
+window.notifyCustomerCheckbox = notifyCustomerCheckbox;
+window.sendEmailCheckbox = sendEmailCheckbox;
+//]]>
+
+});
+</script>    </div>
+</form>
+<script>
+require([
+    "jquery",
+    "mage/mage",
+    "prototype"
+], function(jQuery){
+    jQuery('#edit_form').mage('form').mage('validation');
+
+});
+</script>
+<script>
+    require([
+        "jquery",
+        "prototype",
+        "Magento_Shipping/order/packaging",
+        "Magento_Ui/js/modal/modal"
+    ], function(jQuery){
+
+        window.packaging = new Packaging({"createLabelUrl":"http:\/\/localhost:7780\/admin\/admin\/order_shipment\/save\/order_id\/299\/","itemsGridUrl":"http:\/\/localhost:7780\/admin\/admin\/order_shipment\/getShippingItemsGrid\/order_id\/299\/","errorQtyOverLimit":"You are trying to add a quantity for some products that doesn't match the quantity that was shipped.","titleDisabledSaveBtn":"Products should be added to package(s)","validationErrorMsg":"The value that you entered is not valid.","shipmentItemsQty":{"1565":1,"1567":1,"1569":1,"1571":1,"1573":1},"shipmentItemsPrice":{"1565":22,"1567":74,"1569":28,"1571":69,"1573":50},"shipmentItemsName":{"1565":"Argus All-Weather Tank","1567":"Marco Lightweight Active Hoodie","1569":"Tiffany Fitness Tee","1571":"Nadia Elements Shell","1573":"Gwen Drawstring Bike Short"},"shipmentItemsWeight":{"1565":"1.0000","1567":"1.0000","1569":"1.0000","1571":"1.0000","1573":"1.0000"},"shipmentItemsProductId":{"1565":"694","1567":"254","1569":"1508","1571":"1348","1573":"1951"},"shipmentItemsOrderItemId":{"1565":"1565","1567":"1567","1569":"1569","1571":"1571","1573":"1573"},"customizable":[]});
+        packaging.changeContainerType($$('select[name=package_container]')[0]);
+        packaging.checkSizeAndGirthParameter(
+            $$('select[name=package_container]')[0],
+            0
+        );
+        packaging.setConfirmPackagingCallback(function(){
+            packaging.setParamsCreateLabelRequest($('edit_form').serialize(true));
+            packaging.sendCreateLabelRequest();
+        });
+        packaging.setLabelCreatedCallback(function(response){
+            setLocation("http\u003A\u002F\u002Flocalhost\u003A7780\u002Fadmin\u002Fsales\u002Forder\u002Fview\u002Forder_id\u002F299\u002F");
+        });
+        packaging.setCancelCallback(function() {
+            if ($('create_shipping_label')) {
+                packaging.cleanPackages();
+                $('create_shipping_label').checked = false;
+                toggleCreateLabelCheckbox();
+            }
+        });
+        packaging.setItemQtyCallback(function(itemId){
+            var item = $$('[name="shipment[items]['+itemId+']"]')[0],
+                itemTitle = $('order_item_' + itemId + '_title');
+            if (!itemTitle && !item) {
+                return 0;
+            }
+            if (item && !isNaN(item.value)) {
+                return item.value;
+            }
+        });
+        jQuery('#packaging_window').modal({
+            type: 'slide',
+            title: 'Create\u0020Packages',
+            buttons: [{
+                text: 'Cancel',
+                'class': 'action-secondary',
+                click: function () {
+                    packaging.cancelPackaging();
+                    this.closeModal();
+                    }
+                }, {
+                text: 'Save',
+                'attr': {'disabled':'disabled', 'data-action':'save-packages'},
+                'class': 'action-primary _disabled',
+                click: function () {
+                    packaging.confirmPackaging();
+                    }
+                }, {
+                    text: 'Add\u0020Package',
+                    'attr': {'data-action':'add-packages'},
+                    'class': 'action-secondary',
+                    click: function () {
+                        packaging.newPackage();
+                    }
+            }]
+        });
+        jQuery(document).trigger('packaging:inited');
+        jQuery(document).data('packagingInited', true);
+    });
+</script>
+<script type="text/javascript">    var elemc7CmSnuoArray = document.querySelectorAll('div#packaging_window div.message.message-warning');
+    if(elemc7CmSnuoArray.length !== 'undefined'){
+        elemc7CmSnuoArray.forEach(function(element) {
+            if (element) {
+                element.style.display = 'none';
+
+            }
+        });
+    }</script><script>
+require([
+    'jquery',
+    'mage/mage'
+], function($){
+
+    $('#edit_form').mage('form').mage('validation', {
+            validationUrl: '',
+            highlight: function(element) {
+                var detailsElement = $(element).closest('details');
+                if (detailsElement.length && detailsElement.is('.details')) {
+                    var summaryElement = detailsElement.find('summary');
+                    if (summaryElement.length && summaryElement.attr('aria-expanded') === "false") {
+                        summaryElement.trigger('click');
+                    }
+                }
+                $(element).trigger('highlight.validate');
+            }
+    });
+});
+</script></div></div></div></main><footer class="page-footer"><div class="page-footer-content row"><div class="footer-legal"><p class="copyright col-m-6"><a class="link-copyright" href="http://magento.com" target="_blank" title="Magento"></a>
+Copyright © 2026 Magento Commerce Inc. All rights reserved.</p><div class="footer-legal-system col-m-6"><p class="magento-version">
+    <strong>Magento</strong>
+    ver. 2.4.6</p>
+
+<a class="link-report" href="https://www.adobe.com/privacy/policy.html" id="footer_privacy" target="_blank">
+    Privacy Policy</a> |<a class="link-account-activity" href="http://localhost:7780/admin/security/session/activity/" id="footer_account_activity" target="_blank">
+    Account Activity</a> |
+    <a class="link-report" href="https://github.com/magento/magento2/issues" id="footer_bug_tracking" target="_blank">
+        Report an Issue    </a>
+</div></div></div></footer></div>    
+
+<div class="modals-wrapper"><!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<aside role="dialog" class="modal-slide 
+               " aria-labelledby="modal-title-0" aria-describedby="modal-content-0" data-role="modal" data-type="slide" tabindex="0">
+    <div data-role="focusable-start" tabindex="0"></div>
+    <div class="modal-inner-wrap" data-role="focusable-scope">
+        <header class="modal-header">
+            
+            <h1 id="modal-title-0" class="modal-title" data-role="title">
+                
+                    Create Packages
+                
+
+                
+            </h1>
+            
+            <button class="action-close" data-role="closeBtn" type="button">
+                <span>Close</span>
+            </button>
+            
+            <div class="page-main-actions">
+                <div class="page-actions">
+                    <div class="page-actions-buttons">
+                        
+                        <button class="action-secondary" type="button" data-role="action"><span>Cancel</span>
+                        </button>
+                        
+                        <button class="action-primary _disabled" type="button" data-role="action" disabled="disabled" data-action="save-packages"><span>Save</span>
+                        </button>
+                        
+                        <button class="action-secondary" type="button" data-role="action" data-action="add-packages"><span>Add Package</span>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+        <div id="modal-content-0" class="modal-content" data-role="content"><div id="packaging_window">
+    <div class="message message-warning" style="display: none;"></div>
+    <section class="admin__page-section" id="package_template" style="display: none;">
+        <div class="admin__page-section-title">
+            <span class="title">
+                Package <span data-role="package-number"></span>
+            </span>
+            <div class="actions _primary">
+                <button type="button" class="action-secondary" data-action="package-save-items">
+                    <span>Add Selected Product(s) to Package</span>
+                </button>
+                <button type="button" class="action-secondary" data-action="package-add-items">
+                    <span>Add Products to Package</span>
+                </button>
+            </div>
+        </div>
+        <div class="admin__control-table-wrapper admin__page-subsection">
+            <table class="data-table admin__control-table admin__control-table">
+                <thead>
+                    <tr>
+                        <th class="col-type">Type</th>
+                                                <th class="col-custom" style="display: none;">
+                            Customs Value                        </th>
+                                                    <script type="text/javascript">    var elemhOUXbsGFArray = document.querySelectorAll('th.col-custom');
+    if(elemhOUXbsGFArray.length !== 'undefined'){
+        elemhOUXbsGFArray.forEach(function(element) {
+            if (element) {
+                element.style.display = 'none';
+
+            }
+        });
+    }</script>                                                <th class="col-total-weight">Total Weight</th>
+                        <th class="col-length _required"><span>Length</span></th>
+                        <th class="col-width _required"><span>Width</span></th>
+                        <th class="col-height _required"><span>Height</span></th>
+                        <th>&nbsp;</th>
+                                                <th class="col-actions">&nbsp;</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="col-type">
+                                                        <select name="package_container" title="USPS domestic shipments don't use package types." disabled="" class="admin__control-select disabled">
+                                                            </select>
+                        </td>
+                                                                        <td class="col-custom" style="display: none;">
+                            <div class="admin__control-addon">
+                                <input type="text" class="customs-value input-text admin__control-text " name="package_customs_value">
+                                <span class="admin__addon-suffix">
+                                    <span class="customs-value-currency">
+                                        USD                                    </span>
+                                </span>
+                            </div>
+                        </td>
+                                                    <script type="text/javascript">    var elemG7zUJGRBArray = document.querySelectorAll('td.col-custom');
+    if(elemG7zUJGRBArray.length !== 'undefined'){
+        elemG7zUJGRBArray.forEach(function(element) {
+            if (element) {
+                element.style.display = 'none';
+
+            }
+        });
+    }</script>                                                <td class="col-total-weight">
+                            <div class="admin__control-addon">
+                            <input type="text" class="options-weight input-text admin__control-text required-entry
+                                    validate-greater-than-zero" name="container_weight">
+                                    <select name="container_weight_units" class="options-units-weight measures admin__control-select">
+                                        <option value="POUND" selected="selected">lb                                        </option>
+                                        <option value="KILOGRAM">
+                                            kg                                        </option>
+                                    </select>
+                                <span class="admin__addon-prefix"></span>
+                            </div>
+                        </td>
+                        <td class="col-length">
+                            <input type="text" class="input-text admin__control-text validate-greater-than-zero" name="container_length">
+                        </td>
+                        <td class="col-width">
+                            <input type="text" class="input-text admin__control-text validate-greater-than-zero" name="container_width">
+                        </td>
+                        <td class="col-height">
+                            <input type="text" class="input-text admin__control-text validate-greater-than-zero" name="container_height">
+                        </td>
+                        <td class="col-measure">
+                            <select name="container_dimension_units" class="options-units-dimensions measures admin__control-select">
+                                <option value="INCH" selected="selected">
+                                    in                                </option>
+                                <option value="CENTIMETER">
+                                    cm                                </option>
+                            </select>
+                        </td>
+                                                <td class="col-actions">
+                            <button type="button" class="action-delete DeletePackageBtn">
+                                <span>Delete Package</span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+                    </div>
+        <div class="admin__page-subsection" data-role="package-items">
+            <div class="grid_prepare admin__page-subsection"></div>
+        </div>
+    </section>
+    <div id="packages_content"></div>
+    <script type="text/javascript">    var elemRNKdbjVzArray = document.querySelectorAll('#package_template');
+    if(elemRNKdbjVzArray.length !== 'undefined'){
+        elemRNKdbjVzArray.forEach(function(element) {
+            if (element) {
+                element.style.display = 'none';
+
+            }
+        });
+    }</script>        <script>require(['jquery'], function($){
+    $("div#packages_content").on('click', "button[data-action='package-save-items']",
+        function(){packaging.packItems(this)});
+    $("div#packages_content").on('click', "button[data-action='package-add-items']",
+        function(){packaging.getItemsForPack(this)});
+    $("div#packages_content").on('change', "select[name='package_container']",
+        function(){
+            packaging.changeContainerType(this);
+            packaging.checkSizeAndGirthParameter(this, 0)
+        });
+    $("div#packages_content").on('change', "select[name='container_weight_units']",
+        function(){packaging.changeMeasures(this)});
+    $("div#packages_content").on('change', "select[name='container_dimension_units']",
+        function(){packaging.changeMeasures(this)});
+    $("div#packages_content").on('click', "button.action-delete.DeletePackageBtn",
+        function(){packaging.deletePackage(this)});})</script></div></div>
+    </div>
+    <div data-role="focusable-end" tabindex="0"></div>
+</aside><!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<aside role="dialog" class="modal-slide  notification_area_notification_area_modalContainer_modal
+               " aria-describedby="modal-content-14" data-role="modal" data-type="slide" tabindex="0">
+    <div data-role="focusable-start" tabindex="0"></div>
+    <div class="modal-inner-wrap" data-role="focusable-scope">
+        <header class="modal-header">
+            
+            <button class="action-close" data-role="closeBtn" type="button">
+                <span>Close</span>
+            </button>
+            
+        </header>
+        <div id="modal-content-14" class="modal-content" data-role="content"><div data-bind="css: modalClass, hasFocus: focused" class="modal-component">
+    <!-- ko if: state() || $data.modal --><!-- /ko -->
+</div></div>
+    </div>
+    <div data-role="focusable-end" tabindex="0"></div>
+</aside></div><div class="admin__menu-overlay" style="display: none;"></div></body></html>

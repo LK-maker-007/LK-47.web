@@ -1,0 +1,42 @@
+[project]
+name = "lk47"
+version = "0.0.0"
+requires-python = "==3.10.*"
+dependencies = ["lxml", "cssselect"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+# ruff covers source only; tests are checked by mypy and by running them
+extend-exclude = ["third_party", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RET", "PL"]
+ignore = ["PLR2004"]
+
+[tool.ruff.lint.per-file-ignores]
+# generated data: template texts are kept on one line each
+"lk47/intents/templates_data.py" = ["E501"]
+"lk47/intents/templates_verified.py" = ["E501"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["lk47", "tests", "scripts"]
+exclude = ["third_party"]
+
+[[tool.mypy.overrides]]
+module = ["browser_env", "browser_env.*", "agent", "agent.*", "evaluation_harness", "evaluation_harness.*", "run"]
+follow_imports = "skip"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+# the harness's Agent base class is untyped under follow_imports = "skip"
+module = ["lk47.agent"]
+disallow_subclassing_any = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+markers = ["live: needs the running containers and LK47_LIVE=1"]
